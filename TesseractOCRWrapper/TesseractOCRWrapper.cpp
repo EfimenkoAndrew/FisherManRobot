@@ -8,6 +8,8 @@
 // see TesseractOCRWrapper.h for the class definition
 CTesseractOCRWrapper::CTesseractOCRWrapper()
 {
+	::SetConsoleCP(1251);
+	::SetConsoleOutputCP(1251);
 	this->_tessApi.Init(NULL, NULL);
 }
 

@@ -38,9 +38,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     {
         return FALSE;
     }
-
-	ocr ocr;
-	auto var = ocr.GetText("tTest.png");
+	int far* ptr = nullptr;
+	ocr ocr("rus");
+	std::string var = ocr.GetText("tTest2.png");
 
 	HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_FISHCATCHERUI));
 
